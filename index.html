@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Keerthi Earra</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Keerthi Earra</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile-pic.png" alt="My profile image">
+        </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello There!</p>
+        <h1 class="title">Keerthi Earra</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+            <button class="btn btn_color-2"
+            onclick="window.open('./assests/Keerthi Earra.pdf')">
+            Download CV
+            </button>
+            <button class="btn btn_color-1"
+            onclick="location.href='./#contact' ">
+            Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assests/linkedin.png" 
+                alt="my linked in profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/keerthiearra'"
+            />
+            <img src="./assests/github.png" 
+            alt="my github in profile"
+            class="icon" 
+            onclick="location.href='https://github.com/keerthi0211'"
+            />
+        </div>
+    </div>    
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more about me</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+            <img src="./assests/about-pic.png" 
+            alt="about profile pic"
+            class="aboutpic" 
+            />
+            </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assests/experience.png" 
+                    alt="experience pic"
+                    class="icon" 
+                    />
+                    <h3>Experience</h3>
+                    <p>1 year Internship Experinece <br /> Software Engineer</p>
+                </div>
+                <div class="details-container">
+                    <img 
+                    src="./assests/education.png" 
+                    alt="education pic"
+                    class="icon" 
+                    />
+                    <h3>Education</h3>
+                    <p>B.Tech in Informaiton Technology <br /> MS in Computer and Inofrmation Sciences</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I'm Keerthi, a Computer Science Graduate Student at the University of Florida, throughout my academic journey, I've pursued excellence and innovation, engaging deeply in cutting-edge research and impactful internships. My technical toolkit is, encompassing Data Visualisation, tools like PowerBI, Microsoft Excel, JMP, and RStudio, along with programming skills in Python, HTML, CSS, Java, React, and JavaScript. I am also proficient in using statistical software for Hypothesis Testing and Data Analysis.<br />
+                    Actively seeking full-time opportunities, I am eager to leverage my software engineering skills and passion for technology-driven business solutions. I am enthusiastic about connecting with professionals and organizations where I can play a pivotal role in tech and business hybrid roles.
+                    </p>
+            </div>
+        </div>
+    </div>
+        <img 
+        src="./assests/arrow.png" 
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+            <h1 class="title">Work Experience</h1>
+            <div class="experience-container">
+                <div class="job-entry">
+                    <div class="job-description-container">
+                    <h2 class="job-title">Data Analyst (Graduate Assistant) - Unversity of Florida</h2>
+                    <p class="job-duration">Aug 2023 - May 2024</p>
+                    <p class="job-description">Utilized Excel, JMP and Python Libraries to analyze and visualize plant phosphorus bioavailability in soils, improving fertilizer recommendations, and designed a responsive website using TerminalFour, HTML, CSS, and REACT to showcase findings.</p>
+                    <div class="job-skills">
+                        <span>Excel</span>
+                        <span>JMP</span>
+                        <span>Numpy</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="job-entry">
+                    <div class="job-description-container">
+                    <h2 class="job-title">Software Engineer (Intern) - Techwave Consulting Inc.</h2>
+                    <p class="job-duration">May 2023 - Aug 2023</p>
+                    <p class="job-description">Enhancing the Retail Foreign Exchange Platform's reliability, improved business intelligence through strategic dashboard implementations and boosted system efficiency by developing new features in Python and optimizing DB management.</p>
+                    <div class="job-skills">
+                        <span>Python</span>
+                        <span>PowerBI</span>
+                        <span>SonarQube</span>
+                        <span>Agile</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="job-entry">
+                    <div class="job-description-container">
+                    <h2 class="job-title">Software Engineer (Intern) - Opentext</h2>
+                    <p class="job-duration">Mar 2022 - Jul 2022</p>
+                    <p class="job-description">QA Engineer on the Documentum D2 project, focusing on improving CMS with access control and automated workflows, while managing code quality, automating tests, and deploying scalable RESTful APIs to improve system integration.</p>
+                    <div class="job-skills">
+                        <span>Java</span>
+                        <span>Jenkins</span>
+                        <span>Selenium</span>
+                        <span>Jira</span>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="job-entry">
+                    <div class="job-description-container">
+                    <h2 class="job-title">Software Trainee (Intern) - Techwave Consulting Inc.</h2>
+                    <p class="job-duration">Apr 2021 - Jun 2021</p>
+                    <p class="job-description">Acquired proficiency as a trainee in technological stacks and development tools, enhancing knowledge in full-stack development, Agile methodologies, version control systems like Git, and Continuous Integration Continuous Deployment practices.
+                    </p>
+                    <div class="job-skills">
+                        <span>GIT</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Agile</span>
+                    </div>
+                </div>
+            </div>
+                    <img src="./assests/arrow.png" 
+                    alt="Next Section Arrow" 
+                    class="icon arrow" 
+                    onclick="location.href='#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/hqdefault.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Handwritten Digit Recognizer</h2>
+              <p class="project-description">Implemented GAN and VAE on the MNIST dataset to generate realistic digits, compared their performance using Python and TensorFlow, enhancing understanding of unsupervised learning and generative models.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn_color-2 project-btn"
+                  onclick="location.href='https://github.com/keerthi0211'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn_color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/CNN.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Facial Expression Detection</h2>
+              <p class="project-description">Led a team of four to design a lightweight CNN for real-time facial expression detection using Global Average Pooling instead of a fully connected layer, and applied Multitask Cascaded CNN for face detection and emotion classification.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn_color-2 project-btn"
+                  onclick="location.href='https://github.com/keerthi0211'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn_color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/terror.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Global Terrorism Analysis</h2>
+              <p class="project-description">Analyzed data from the Global Terrorism report (1974-2018), created visual representations of terrorist incidents illustrating the impact of various factors, and used Linear Regression to predict future casualties.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn_color-2 project-btn"
+                  onclick="location.href='https://github.com/keerthi0211'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn_color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assests/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assests/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">ekreddy211@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assests/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/keerthiearra">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
