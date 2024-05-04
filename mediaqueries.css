@@ -170,3 +170,10 @@
         font-size: 0.9rem;
     }
   }
+
+  @media screen and (max-width: 768px) { /* or whatever breakpoint you need */
+    .hamburger-menu {
+        z-index: 10;
+        /* Any other positioning styles for mobile */
+    }
+}

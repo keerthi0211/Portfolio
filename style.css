@@ -79,6 +79,7 @@ a:hover{
 
 .hamburger-icon{
     display: flex;
+    z-index: 10;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
@@ -370,7 +371,7 @@ section {
 }
 
 .job-duration {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #777;
     margin-bottom: 0.5rem;
 }
@@ -378,7 +379,7 @@ section {
 
 .job-description {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 1rem;
 }
 
@@ -542,3 +543,151 @@ section {
   footer p {
     text-align: center;
   }
+
+    /* Interests SECTION */
+
+    #interests {
+        padding: 20px; /* Provides padding around the container */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers content horizontally */
+        justify-content: center; /* Helps with vertical alignment if needed */
+    }
+    
+    .title {
+        margin-bottom: 30px; /* Space between the title and the cards */
+        font-size: 2.5rem; /* Visible and prominent title size */
+        text-align: center;
+    }
+    
+    .interests-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Ensures the cards are centered within the container */
+        max-width: 960px; /* Controls the maximum width of the container */
+        gap: 20px; /* Space between each card */
+    }
+    
+    .interest-entry {
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 300px; /* Adjust width here to scale the card size */
+        min-height: 260px; /* Adjust height to scale the card size */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .interest-entry:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    
+    .interest-image {
+        width: 100%;
+        height: 140px; /* Adjust the image height to fit the new card size */
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    
+    .interest-info {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .interest-info h2 {
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+    
+    .interest-info p {
+        font-size: 0.9rem;
+    }
+    
+    @media (max-width: 960px) {
+        .interests-container {
+            justify-content: space-around; /* Ensures even spacing when container width is reduced */
+        }
+    
+        .interest-entry {
+            width: 45%; /* Adjust width for smaller screens to maintain the 2-row layout */
+            min-height: 240px; /* Slightly reduces the height on smaller screens */
+        }
+    }
+      
+    
+    .arrow {
+        position: absolute;
+        right: -5rem;
+        bottom: 2.5rem;
+      }
+
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background for the modal */
+    }
+    
+    
+    .modal-content {
+        background-color: transparent; /* Makes the modal-content background transparent */
+        margin: 10% auto;
+        padding: 0;
+        border: none;
+        width: 80%;
+        max-width: 600px;
+    }
+    
+    .modal-image-container {
+        width: 100%;
+        background-color: transparent; /* Transparent background for the image container */
+        text-align: center; /* Centering the image */
+    }    
+    
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-img {
+        width: 100%;  /* Ensures the image takes up the full width of the modal content area */
+        height: 400px; /* Sets the height automatically to maintain the aspect ratio */
+        max-height: 600px; /* You can adjust this value based on your modal size or leave it flexible */
+        object-fit: contain; /* Ensures the entire image is visible and scaled properly */
+        border-radius: 8px; /* Rounded corners for aesthetics */
+        margin-bottom: 20px; /* Space between the image and subsequent text */
+    }
+
+    .modal-description {
+        background-color: #fff; /* White background for the text description area */
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .modal-text {
+        margin-top: 20px; /* Adds more space between the text and any content above */
+    }
+    
+
+    

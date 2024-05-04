@@ -15,6 +15,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -31,6 +32,7 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -68,7 +70,7 @@
     </div>    
     </section>
     <section id="about">
-        <p class="section__text__p1">Get to know more about me</p>
+        <p class="section__text__p1">Get to know more</p>
         <h1 class="title">About me</h1>
         <div class="section-container">
             <div class="section__pic-container">
@@ -250,9 +252,71 @@
           src="./assests/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#contact'"
+          onclick="location.href='./#interests'"
         />
     </section>
+    <section id="interests">
+        <p class="section__text__p1">my interests</p>
+        <h1 class="title">Beyond my Resume</h1>
+        <div class="interests-container">
+            <!-- Each entry with a click event to open a modal for more details -->
+            <div class="interest-entry" onclick="openModal('ghc')">
+                <img src="./assests/ghc1.png" alt="Grace Hopper Celebration" class="interest-image">
+                <div class="interest-info">
+                <h2>Grace Hopper Celebration</h2>
+                <p>Participated in the largest gathering of women technologists.</p>
+                </div>
+            </div>
+            <div class="interest-entry" onclick="openModal('toastmasters')">
+                <img src="./assests/toastmasters1.JPG" alt="Toastmasters International" class="interest-image">
+                <div class="interest-info">
+                <h2>Toastmasters International</h2>
+                <p>Enhancing leadership and communication skills.</p>
+                </div>
+            </div>
+            <div class="interest-entry" onclick="openModal('volunteering')">
+                <img src="./assests/volunteering1.JPG" alt="Volunteering" class="interest-image">
+                <div class="interest-info">
+                <h2>Volunteering</h2>
+                <p>Dedicated to Empowering Underprivileged Communities through Social Welfare Initiatives.</p>
+                </div>
+            </div>
+            <div class="interest-entry" onclick="openModal('books')">
+                <img src="./assests/books1.png" alt="Favorite Books" class="interest-image">
+                <div class="interest-info">
+                <h2>Favorite Books</h2>
+                <p>Books that inspire and educate.</p>
+                </div>
+            </div>
+            <div class="interest-entry" onclick="openModal('scholarships')">
+                <img src="./assests/Scholarship1.jpg" alt="Scholarships" class="interest-image">
+                <div class="interest-info">
+                <h2>Scholarships</h2>
+                <p>Acknowledged for academic excellence.</p>
+                </div>
+            </div>
+        </div>
+<!--       <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="arrow"
+        onclick="location.href='./#contact'"
+        /> --> 
+    </section>
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-image-container">
+            <img id="modal-image" src="" alt="Interest Image" class="modal-img"> <!-- New image element -->
+            </div>
+            <div class="modal-description">
+                <h2 id="modal-title"></h2>
+                <p id="modal-text"></p>
+            </div>    
+        </div>
+    </div>    
+
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -274,7 +338,7 @@
             <p><a href="https://www.linkedin.com/in/keerthiearra/">LinkedIn</a></p>
           </div>
         </div>
-      </section>
+    </section>
       <footer>
         <nav>
           <div class="nav-links-container">
@@ -282,6 +346,7 @@
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#interests">Interests</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
