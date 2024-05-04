@@ -10,6 +10,13 @@
     #projects {
       height: fit-content;
     }
+    .interests-container {
+        justify-content: space-around; /* Ensures even spacing when container width is reduced */
+    }
+    
+    .interest-entry {
+        width: 30%; /* Adjust width for smaller screens */
+    }
   }
   
   @media screen and (max-width: 1200px) {
@@ -70,6 +77,9 @@
     }
     .about-containers {
       margin-top: 0;
+    }
+    .interest-entry {
+        width: 45%; /* Adjust width for smaller screens */
     }
   }
   
@@ -169,11 +179,19 @@
     .job-duration {
         font-size: 0.9rem;
     }
+    .interest-entry {
+        width: 100%; /* Adjust width for smaller screens to occupy full width */
+        min-height: 200px; /* Adjust height for smaller screens */
+    }
+
   }
 
   @media screen and (max-width: 768px) { /* or whatever breakpoint you need */
     .hamburger-menu {
         z-index: 10;
         /* Any other positioning styles for mobile */
+    }
+    .interest-entry {
+        width: 100%; /* Adjust width for smaller screens to occupy full width */
     }
 }
