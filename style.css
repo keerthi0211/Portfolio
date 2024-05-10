@@ -330,7 +330,7 @@ section {
  
  #experience {
     position: relative;
-    padding: 2rem 5rem; /* Reduced padding */
+    padding: 1rem 2rem; /* Reduced padding */
     box-sizing: border-box;
 }
 
@@ -338,22 +338,15 @@ section {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line */
     justify-content: space-between; /* Distributes items evenly along the main axis with maximum space */
+    margin: 0 -50px;
 }
 
 
 .job-entry {
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(50% - 20px); /* Two boxes per row with 20px spacing between */
-    margin-bottom: 40px; 
-    padding: 20px;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    background-color: #f9f9f9; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    width: calc(45% - 5px); /* Two entries per row, 20px for margin */
+    margin: 15px; /* Space around each entry */
+    padding: 15px; /* Reduced padding inside each job entry */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 
@@ -370,37 +363,25 @@ section {
     flex-grow: 1;
 }
 
-.job-duration {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 0.5rem;
-}
-
-
+.job-title,
+.job-duration,
 .job-description {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+  font-size: 0.95rem; /* Smaller text for better fit */
 }
 
 .job-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Reduced gap between skill tags */
+  margin-top: 8px; /* Space above the skill tags */
 }
 
-
 .job-skills span {
-    display: inline-block;
-    background-color: #e4e4e4; 
-    color: #333; 
-    padding: 0.5rem 1rem;
-    border-radius: 1rem; 
-    font-size: 0.8rem;
-    text-transform: uppercase; 
-    font-weight: 500; 
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+  font-size: 0.75rem; /* Smaller skill tags */
+  padding: 2px 8px; /* Smaller padding in skill tags */
+  border-radius: 5px; /* Less rounded corners for a sharper look */
+  background-color: #e4e4e4; /* Light grey background for skill tags */
+  box-shadow: none; /* Removing shadow from skills for a flatter look */
 }
 
 .job-skills span:hover {
@@ -409,7 +390,7 @@ section {
 }
 
 
-/* Responsive adjustments */
+
 @media screen and (max-width: 768px) {
     #experience {
         padding: 4vh 5rem;
@@ -423,12 +404,13 @@ section {
     .job-image {
         margin-bottom: 1rem;
     }
-} 
+}   
 
 /* PROJECTS SECTION */
 
 #projects {
     position: relative;
+    height: fit-content;
   }
   
   .color-container {
@@ -438,14 +420,13 @@ section {
   
   .project-img {
     border-radius: 2rem;
-    width: 250px;
-    height: 200px;
+    width: 90%;
+    height: 90%;
   }
   
   .project-title {
     margin: 1rem;
     color: black;
-    margin-bottom: 0.5rem;
   }
   
   .project-btn {
@@ -610,14 +591,14 @@ section {
     
     @media (max-width: 960px) {
         .interests-container {
-            justify-content: space-around; /* Ensures even spacing when container width is reduced */
+            justify-content: space-around; 
         }
     
         .interest-entry {
-            width: 45%; /* Adjust width for smaller screens to maintain the 2-row layout */
-            min-height: 240px; /* Slightly reduces the height on smaller screens */
+            width: 45%; 
+            min-height: 240px; 
         }
-    }
+    } 
       
     
     .arrow {

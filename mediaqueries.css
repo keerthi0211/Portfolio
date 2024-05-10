@@ -1,197 +1,240 @@
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
-    .interests-container {
-        justify-content: space-around; /* Ensures even spacing when container width is reduced */
-    }
-    
-    .interest-entry {
-        width: 30%; /* Adjust width for smaller screens */
-    }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+
+  #interests
+  .interests-container {
+    display: flex;  /* This ensures that the entries are laid out horizontally */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    justify-content: space-around; /* Ensures even spacing when container width is reduced */
+  }
+
+  .interest-entry {
+    width: calc(18% - 5px); /* Adjust width taking some margin into account */
+    margin: 2px; /* Provides space around each entry */
   }
   
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience {
-        padding: 2rem; /* Adjust padding for the experience section */
-    }
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures there is space between the columns */
+    margin: 0 -50px; /* Negative margin to counteract the padding on each job-entry */
+  }
 
-    .experience-container {
-        justify-content: space-around; /* Adjust spacing between job entries */
-    }
+  .job-entry {
+    width: calc(45% - 5px); /* Two entries per row, 20px for margin */
+    margin: 15px; /* Space around each entry */
+    padding: 15px; /* Reduced padding inside each job entry */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
 
-    .job-entry {
-        width: calc(33.333% - 20px); /* Adjust width for three columns layout */
-        margin-bottom: 2rem; /* Adjust the spacing between rows */
-    }
+  .job-title,
+  .job-duration,
+  .job-description {
+    font-size: 0.95rem; /* Smaller text for better fit */
+  }
 
-    .job-entry:nth-child(even) {
-        margin-left: 0; /* Reset the margin for even elements if moving to a three column layout */
-    }
+  .job-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduced gap between skill tags */
+    margin-top: 8px; /* Space above the skill tags */
+  }
 
-    .job-description-container {
-        /* Any additional styles for the description container if necessary */
-    }
+  .job-skills span {
+    font-size: 0.75rem; /* Smaller skill tags */
+    padding: 2px 8px; /* Smaller padding in skill tags */
+    border-radius: 5px; /* Less rounded corners for a sharper look */
+    background-color: #e4e4e4; /* Light grey background for skill tags */
+    box-shadow: none; /* Removing shadow from skills for a flatter look */
+  }
 
-    .job-description {
-        font-size: 0.95rem; /* Slightly smaller font size if needed */
-    }
+}
 
-    .job-skills span {
-        font-size: 0.75rem; /* Adjust skill tag font size if necessary */
-    }
-    
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience {
+      padding: 2rem; /* Adjust padding for the experience section */
+  }
 
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
-    .interest-entry {
-        width: 45%; /* Adjust width for smaller screens */
-    }
+  .experience-container {
+      justify-content: space-around; /* Adjust spacing between job entries */
+  }
+
+  .job-entry {
+      width: calc(33.333% - 20px); /* Adjust width for three columns layout */
+      margin-bottom: 2rem; /* Adjust the spacing between rows */
+  }
+
+  .job-entry:nth-child(even) {
+      margin-left: 0; /* Reset the margin for even elements if moving to a three column layout */
+  }
+
+  .job-description {
+      font-size: 0.95rem; /* Slightly smaller font size if needed */
+  }
+
+  .job-skills span {
+      font-size: 0.75rem; /* Adjust skill tag font size if necessary */
   }
   
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
-    #experience {
-        padding: 2rem 1rem; /* Reduce side padding */
-    }
-
-    .experience-container {
-        /* You can remove justify-content or set it to 'flex-start' if needed */
-        justify-content: flex-start;
-    }
-
-    .job-entry {
-        width: 100%; /* Full width for single column layout */
-        margin-bottom: 2rem; /* Adjust the spacing between job entries if needed */
-        margin-left: 0; /* Reset left margin since it's a single column layout */
-    }
-
-    .job-description-container {
-        /* Any additional styles for the description container if necessary */
-    }
-
-    .job-description {
-        font-size: 0.9rem; /* Adjust the font size for readability */
-    }
-
-    .job-skills span {
-        font-size: 0.8rem; /* Adjust skill tag font size for smaller screens */
-        padding: 0.4rem 0.8rem; /* Adjust padding for skill tags to fit smaller screens */
-    }
-
-    /* If there are any images or icons, you might want to adjust their size as well */
-    .arrow {
-        width: 50px; /* Example to resize arrow icon */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    /* If the job titles are too large for the screen, you may also want to adjust them */
-    .job-title {
-        font-size: 1.2rem; /* Example to decrease font size for job titles */
-    }
-    
-    /* Adjust job duration font size if needed */
-    .job-duration {
-        font-size: 0.9rem;
-    }
-    .interest-entry {
-        width: 100%; /* Adjust width for smaller screens to occupy full width */
-        min-height: 200px; /* Adjust height for smaller screens */
-    }
-
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 3%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
   }
 
-  @media screen and (max-width: 768px) { /* or whatever breakpoint you need */
-    .hamburger-menu {
-        z-index: 10;
-        /* Any other positioning styles for mobile */
-    }
-    .interest-entry {
-        width: 100%; /* Adjust width for smaller screens to occupy full width */
-    }
+  #interests
+  .interests-container {
+    display: flex;  /* This ensures that the entries are laid out horizontally */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    justify-content: space-around; /* Ensures even spacing when container width is reduced */
+  }
+
+  .interest-entry {
+    width: calc(18% - 5px); /* Adjust width taking some margin into account */
+    margin: 2px; /* Provides space around each entry */
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section_text_p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  #experience {
+      padding: 2rem 1rem; /* Reduce side padding */
+  }
+
+  .experience-container {
+      /* You can remove justify-content or set it to 'flex-start' if needed */
+      justify-content: flex-start;
+  }
+
+  .job-entry {
+      width: 100%; /* Full width for single column layout */
+      margin-bottom: 2rem; /* Adjust the spacing between job entries if needed */
+      margin-left: 0; /* Reset left margin since it's a single column layout */
+  }
+
+  .job-description {
+      font-size: 0.9rem; /* Adjust the font size for readability */
+  }
+
+  .job-skills span {
+      font-size: 0.8rem; /* Adjust skill tag font size for smaller screens */
+      padding: 0.4rem 0.8rem; /* Adjust padding for skill tags to fit smaller screens */
+  }
+
+  /* If there are any images or icons, you might want to adjust their size as well */
+  .arrow {
+      width: 50px; /* Example to resize arrow icon */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  /* If the job titles are too large for the screen, you may also want to adjust them */
+  .job-title {
+      font-size: 1.2rem; /* Example to decrease font size for job titles */
+  }
+  
+  /* Adjust job duration font size if needed */
+  .job-duration {
+      font-size: 0.9rem;
+  }
+  .interest-entry {
+      width: 100%; /* Adjust width for smaller screens to occupy full width */
+      min-height: 200px; /* Adjust height for smaller screens */
+  }
+
+}
+
+@media screen and (max-width: 768px) { /* or whatever breakpoint you need */
+  .hamburger-menu {
+      z-index: 10;
+      /* Any other positioning styles for mobile */
+  }
+  .interest-entry {
+      width: 100%; /* Adjust width for smaller screens to occupy full width */
+  }
 }
