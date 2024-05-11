@@ -14,49 +14,49 @@
 
   #interests
   .interests-container {
-    display: flex;  /* This ensures that the entries are laid out horizontally */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
-    justify-content: space-around; /* Ensures even spacing when container width is reduced */
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-around; 
   }
 
   .interest-entry {
-    width: calc(18% - 5px); /* Adjust width taking some margin into account */
-    margin: 2px; /* Provides space around each entry */
+    width: calc(18% - 5px); 
+    margin: 2px; 
   }
   
   .experience-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures there is space between the columns */
-    margin: 0 -50px; /* Negative margin to counteract the padding on each job-entry */
+    justify-content: space-between; 
+    margin: 0 -50px; 
   }
 
   .job-entry {
-    width: calc(45% - 5px); /* Two entries per row, 20px for margin */
-    margin: 15px; /* Space around each entry */
-    padding: 15px; /* Reduced padding inside each job entry */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: calc(45% - 5px); 
+    margin: 15px; 
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
   }
 
   .job-title,
   .job-duration,
   .job-description {
-    font-size: 0.95rem; /* Smaller text for better fit */
+    font-size: 0.95rem; 
   }
 
   .job-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px; /* Reduced gap between skill tags */
-    margin-top: 8px; /* Space above the skill tags */
+    gap: 5px; 
+    margin-top: 8px; 
   }
 
   .job-skills span {
-    font-size: 0.75rem; /* Smaller skill tags */
-    padding: 2px 8px; /* Smaller padding in skill tags */
-    border-radius: 5px; /* Less rounded corners for a sharper look */
-    background-color: #e4e4e4; /* Light grey background for skill tags */
-    box-shadow: none; /* Removing shadow from skills for a flatter look */
+    font-size: 0.75rem; 
+    padding: 2px 8px; 
+    border-radius: 5px;
+    background-color: #e4e4e4; 
+    box-shadow: none; 
   }
 
 }
@@ -69,28 +69,28 @@
     display: flex;
   }
   #experience {
-      padding: 2rem; /* Adjust padding for the experience section */
+      padding: 2rem; 
   }
 
   .experience-container {
-      justify-content: space-around; /* Adjust spacing between job entries */
+      justify-content: space-around; 
   }
 
   .job-entry {
-      width: calc(33.333% - 20px); /* Adjust width for three columns layout */
-      margin-bottom: 2rem; /* Adjust the spacing between rows */
+      width: calc(33.333% - 20px); 
+      margin-bottom: 2rem; 
   }
 
   .job-entry:nth-child(even) {
-      margin-left: 0; /* Reset the margin for even elements if moving to a three column layout */
+      margin-left: 0; 
   }
 
   .job-description {
-      font-size: 0.95rem; /* Slightly smaller font size if needed */
+      font-size: 0.95rem; 
   }
 
   .job-skills span {
-      font-size: 0.75rem; /* Adjust skill tag font size if necessary */
+      font-size: 0.75rem; 
   }
   
   #profile,
@@ -118,14 +118,14 @@
 
   #interests
   .interests-container {
-    display: flex;  /* This ensures that the entries are laid out horizontally */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
-    justify-content: space-around; /* Ensures even spacing when container width is reduced */
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-around;
   }
 
   .interest-entry {
-    width: calc(18% - 5px); /* Adjust width taking some margin into account */
-    margin: 2px; /* Provides space around each entry */
+    width: calc(18% - 5px); 
+    margin: 2px; 
   }
 
 }
@@ -185,7 +185,7 @@
   }
 
   #experience {
-    padding: 2rem 1rem; /* Uniform padding around the experience section */
+    padding: 2rem 1rem; 
   }
 
   .experience-container {
@@ -193,53 +193,52 @@
   }
 
   .job-entry {
-    width: 90%; /* Each job entry takes full width */
-    margin-bottom: 20px; /* Consistent bottom margin between entries */
-    padding: 15px; /* Sufficient padding inside each job entry */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    background-color: #fff; /* Background color for visibility */
-    border-radius: 8px; /* Rounded corners for a smoother look */
+    width: 90%; 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    background-color: #fff; 
+    border-radius: 8px; 
   }
 
   .job-description {
-    font-size: 0.9rem; /* Slightly smaller font size for readability */
+    font-size: 0.9rem; 
   }
 
   .job-skills span {
-    padding: 5px 10px; /* Adequate padding inside skill tags */
-    font-size: 0.8rem; /* Smaller font size for skill tags */
-    margin: 2px; /* Small margin around skill tags to prevent clumping */
-    background-color: #e4e4e4; /* Light grey background for tags */
-    border-radius: 4px; /* Rounded corners for skill tags */
+    padding: 5px 10px; 
+    font-size: 0.8rem; 
+    margin: 2px; 
+    background-color: #e4e4e4; 
+    border-radius: 4px; 
   }
 
   .job-title {
-    font-size: 1rem; /* Larger font size for job titles for emphasis */
+    font-size: 1rem; 
   }
 
   .job-duration {
-    font-size: 0.85rem; /* Smaller font size for duration to save space */
-    color: #666; /* Grey color for less emphasis on duration */
+    font-size: 0.85rem; 
+    color: #666; 
   }
 
   .arrow {
-    width: 50px; /* Adjusts arrow icon size */
+    width: 50px; 
     height: auto;
   }
 
   .interest-entry {
-      width: 100%; /* Adjust width for smaller screens to occupy full width */
-      min-height: 200px; /* Adjust height for smaller screens */
+      width: 100%; 
+      min-height: 200px; 
   }
 
 }
 
-@media screen and (max-width: 768px) { /* or whatever breakpoint you need */
+@media screen and (max-width: 768px) { 
   .hamburger-menu {
       z-index: 10;
-      /* Any other positioning styles for mobile */
   }
   .interest-entry {
-      width: 100%; /* Adjust width for smaller screens to occupy full width */
+      width: 100%; 
   }
 }
